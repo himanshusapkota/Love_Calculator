@@ -1,1 +1,3 @@
-## A SIMPLE LOVE CALCULATOR 
+## Love Calculator is a fun and interactive web application that estimates the compatibility between two people based on their names. Users simply enter their name and their partner's name, click the calculate button, and receive a random love percentage along with a personalized relationship message.
+
+The project features a modern romantic design with animated floating hearts, a glassmorphism-inspired card layout, a smooth loading animation, and a dynamic progress bar that visually represents the compatibility score. Built using only HTML, CSS, and JavaScript, it is beginner-friendly while showcasing attractive UI design and basic DOM manipulation skills. 💖
