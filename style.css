@@ -1,0 +1,186 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Segoe UI, sans-serif;
+}
+
+body{
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    overflow:hidden;
+    background:linear-gradient(
+        135deg,
+        #ff5f9e,
+        #ff8fb1,
+        #ffb3c6
+    );
+}
+
+.container{
+    width:400px;
+    padding:35px;
+    border-radius:25px;
+    text-align:center;
+    backdrop-filter:blur(12px);
+    background:rgba(255,255,255,0.18);
+    border:1px solid rgba(255,255,255,0.3);
+    box-shadow:0 15px 35px rgba(0,0,0,0.15);
+    z-index:2;
+}
+
+h1{
+    color:white;
+    margin-bottom:10px;
+}
+
+p{
+    color:white;
+    margin-bottom:20px;
+}
+
+input{
+    width:100%;
+    padding:14px;
+    margin:10px 0;
+    border:none;
+    border-radius:12px;
+    outline:none;
+    font-size:16px;
+}
+
+.btns{
+    display:flex;
+    gap:10px;
+}
+
+button{
+    flex:1;
+    padding:12px;
+    border:none;
+    border-radius:12px;
+    cursor:pointer;
+    font-size:15px;
+    font-weight:bold;
+    transition:.3s;
+}
+
+button:hover{
+    transform:translateY(-3px);
+}
+
+.reset{
+    background:#444;
+    color:white;
+}
+
+#loading{
+    color:white;
+    margin-top:15px;
+    height:25px;
+}
+
+.result-box{
+    margin-top:20px;
+}
+
+#percent{
+    font-size:40px;
+    color:white;
+    font-weight:bold;
+    margin-bottom:15px;
+}
+
+.progress{
+    width:100%;
+    height:20px;
+    background:rgba(255,255,255,0.3);
+    border-radius:50px;
+    overflow:hidden;
+}
+
+#bar{
+    width:0%;
+    height:100%;
+    border-radius:50px;
+    background:white;
+    transition:1s;
+}
+
+#message{
+    color:white;
+    font-size:20px;
+    margin-top:15px;
+    font-weight:bold;
+}
+
+.hearts span{
+    position:absolute;
+    bottom:-100px;
+    animation:float 12s linear infinite;
+    font-size:25px;
+}
+
+.hearts span:nth-child(1){
+    left:10%;
+    animation-delay:0s;
+}
+
+.hearts span:nth-child(2){
+    left:25%;
+    animation-delay:2s;
+}
+
+.hearts span:nth-child(3){
+    left:40%;
+    animation-delay:4s;
+}
+
+.hearts span:nth-child(4){
+    left:60%;
+    animation-delay:1s;
+}
+
+.hearts span:nth-child(5){
+    left:75%;
+    animation-delay:3s;
+}
+
+.hearts span:nth-child(6){
+    left:90%;
+    animation-delay:5s;
+}
+
+@keyframes float{
+    0%{
+        transform:translateY(0);
+        opacity:0;
+    }
+
+    20%{
+        opacity:1;
+    }
+
+    100%{
+        transform:translateY(-110vh);
+        opacity:0;
+    }
+}
+
+@media(max-width:500px){
+
+    .container{
+        width:90%;
+        padding:25px;
+    }
+
+    h1{
+        font-size:28px;
+    }
+
+    #percent{
+        font-size:32px;
+    }
+}
